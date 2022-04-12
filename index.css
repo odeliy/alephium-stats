@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 980px;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {font-weight: 800;}
+h2 {font-weight: 600;}
+
+.bold {
+  font-weight: 600;
+}
+
+/*************************************/
+/*** Header **************************/
+/*************************************/
+.header {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.header__logo {
+  width: 1.5em;
+}
+
+.header__title {
+  margin-left: .5em;
+}
+
+/*************************************/
+/*** Top 10 Addresses ****************/
+/*************************************/
+.top10 {
+  margin: 0 auto;
+}
+
+/* not actually nested in top10 */
+.top10__heading {
+  text-align: center;
+}
+
+.top10__entry {
+  width: 340px;
+  min-height: 117px;
+  margin: 0 auto 1em auto;
+  padding: 1em;
+  display: flex;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.top10__number {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  align-self: baseline;
+  background-color: #fff;
+}
+
+.top10__stats {
+  margin-left: 1em;
+  align-self: baseline;
+}
+
+.top10__stats p {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+@media (min-width: 785px) {
+  .top10 {
+    max-width: 730px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
